@@ -7,9 +7,9 @@
 </head>
 <body>
 
-   <header>
+   <header class="nav_menu">
 
-        <a href="#home" id="logo">
+        <a href="#hero" id="logo">
             <img src="./assets/logo.png" alt="Infinity Travels logo">
         </a>
 
@@ -31,15 +31,17 @@
         Your browser does not support the video tag.
       </video>
 
-      <div class="slogan">
+      <div class="container_hero">
        <h1>Dare to explore beyond limits</h1>
        <h2>From mountains to oceans — your next adventure starts here</h2>
-       <button href="#inspiration" id="scroll">Discover More</button>
-      </d>
+       <a href="#inspiration" class="btn_scroll">Discover More</a>
+      </div>
 
    </section>
 
    <section class="inspiration">
+
+    <div class="container_inspiration">
 
         <h2>The World Awaits</h2>
         <p> "Travel, as far as you can see,  
@@ -53,20 +55,22 @@
       For in every path you wander,          
       You discover not just new lands, but yourself."  
         </p>
+      
+    </div>
 
    </section>
 
    <section class="destinations">
 
-    <div class="cont_destinations">
+    <div class="container_destinations">
 
         <h2>Destinations</h2>
         <h3>Remarkable adventures around the world!</h3>
 
         <div class="box_destinations">
-          <div id="Thailand">Thailand</div>
-          <div id="Indonesia">Indonesia</div>
-          <div id="Brazil">Brazil</div>
+          <div class="destination_item thailand">Thailand</div>
+          <div class="destination_item indonesia">Indonesia</div>
+          <div class="destination_item brazil">Brazil</div>
         </div>
     </div>
 
@@ -74,7 +78,7 @@
 
    <section class="form">
      
-    <div class="cont_form">
+    <div class="container_form">
 
         <h2>Start your journey</h2>
         <h3>Tell us a bit about your dream trip and we’ll create a personalized plan just for you!</h3>
@@ -96,11 +100,73 @@
             <input id="tel_form" type="tel" name="tel_form" required>
           </div>
           
-          
+          <div class="field_form">
+            <label for="age_form">Age</label>
+            <input id="age_form" type="number" name="age_form" required>
+          </div> 
+
+          <div class="field_form">
+            <label for="destination_form">Choose your destination</label>
+            <select id="destination_form" required>
+              <option value="thailand">Thailand</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="brazil">Brazil</option>
+            </select>
+          </div>
+
+          <div class="field_form">
+            <label for="departure_form">Departure date</label>
+            <input id="departure_form" type="date" name="departure_form">
+          </div>
+
+          <div class="field_form">
+            <label for="return_form">Return date</label>
+            <input id="return_form" type="date" name="return_form">
+          </div>
+
+          <div class="field_form">
+            <label for="people_form">How many people?</label>
+            <input id="people_form" type="number" name="people_form">
+          </div>
+
+          <div class="field_form">
+            <label for="obs_form">Observations</label>
+            <textarea id="obs_form" name="obs_form" rows="5" placeholder="Tell us about special requests or preferences..."></textarea>
+          </div>
+
+          <button type="submit">Request Your Plan</button>
+
         </form>
     </div>
 
    </section>
+
+   <section class="contact">
+    
+     <div class="container_contact">
+
+      <h2>Contact us</h2>
+
+       <div class="contact_item">
+         <h4>Telephone</h4>
+         <a href="tel:+551388885555">13 8888-5555</a> 
+       </div>
+
+       <div class="contact_item">
+         <h4>Email</h4>
+         <a href="mailto:alklas@gmail.com">alklas@gmail.com</a>
+       </div>
+
+       <a href="#form" class="btn_scroll">Forms</a>
+
+     </div>
+
+   </section>
+
+   <footer class="footer">
+     <p>© 2025 Infinity Travels. Designed by caiogarciadev</p>
+   </footer>
+
 
 
 
