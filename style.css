@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu{
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  width: 100%;
+  background-color: black;
+}
+
+#logo img {
+    max-height: 100%;
+    max-width: 80px;
+}
+
+nav ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul a {
+    color: gold;
+}
